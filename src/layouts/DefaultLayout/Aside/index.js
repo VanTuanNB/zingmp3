@@ -95,15 +95,17 @@ function Aside() {
 
             {/* list song */}
             <div className={cx('list-songs')}>
-                {fakeApi.map((data) => (
-                    <Song
-                        key={data.id}
-                        active={sourceSong.id === data.id ? true : false}
-                        image={data.imageSong}
-                        title={data.title}
-                        singer={data.singer}
-                    ></Song>
-                ))}
+                {playlist &&
+                    fakeApi.map((data) => (
+                        <Song
+                            key={data.id}
+                            active={sourceSong.id === data.id ? true : false}
+                            image={data.imageSong}
+                            title={data.title}
+                            singer={data.singer}
+                        ></Song>
+                    ))}
+                {listHere && <h5>Nghe gần đây</h5>}
             </div>
 
             {showTimerSong && <TimerSong state={setShowTimerSong} />}
