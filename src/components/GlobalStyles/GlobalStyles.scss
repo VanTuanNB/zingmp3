@@ -1,0 +1,108 @@
+@import 'normalize.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff;
+    --primary-color: #7200a1;
+    --hover-color: #c662ef;
+    --layout-color: #282828;
+    --navigation-color: #a0a0a0;
+    --purple-color: #7200a1;
+    --primary-background: #3d3d3d;
+
+    --font-primary: 'Inter', sans-serif;
+
+    --header-height: 70px;
+    --width-sidebar: 240px;
+    --width-mid-content: 1030px;
+    --width-aside: 329px;
+    --height-default-content: 100vh;
+    --height-playlist: 90px;
+    --sidebar-bg: hsla(0, 0%, 100%, 0.05);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+a {
+    color: var(--navigation-color);
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/interFont.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/interFont2.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/interFont3.woff2);
+    font-weight: 700;
+}
+
+// custom Scrollbar css
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 4px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+// custom tippy tooltip
+body {
+    .tippy-box {
+        background-color: rgb(51, 51, 51);
+        font-size: 1.1rem;
+        border-radius: 4px;
+        font-weight: 600;
+        padding: 5px 9px;
+        line-height: 1.3rem;
+        text-align: center;
+    }
+
+    .tippy-arrow {
+        color: rgb(51, 51, 51);
+    }
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
+    .tippy-content {
+        padding: 0;
+    }
+}

@@ -1,0 +1,133 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    z-index: 1000000;
+}
+
+.modal {
+    margin: auto;
+    width: 330px;
+    padding: 30px 25px 15px;
+    background-color: var(--primary-background);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 1.8rem;
+    margin: 0 0 25px 0;
+    text-transform: capitalize;
+}
+
+.time-picker {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 19px 20px 20px;
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.time-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #ccc;
+    user-select: none;
+    width: 100px;
+    cursor: pointer;
+}
+
+.time-input {
+    border: none;
+    font-size: 3.4rem;
+    padding: 0;
+    height: 40px;
+    width: 50px;
+    letter-spacing: 3px;
+    user-select: none;
+    background-color: transparent;
+    color: var(--white-color);
+}
+
+.time-desc {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.time-dot {
+    font-size: 3.4rem;
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.time-information {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.time-btn {
+    width: 100%;
+    color: var(--white-color);
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    background-color: var(--purple-color);
+    border-radius: 20px;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+
+    &.cancel {
+        background-color: transparent;
+    }
+}
+
+.time-btn-disable {
+    width: 100%;
+    color: var(--white-color);
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    background-color: var(--purple-color);
+    border-radius: 20px;
+    justify-content: center;
+    font-weight: 600;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.optional-timer {
+    width: 100px;
+    max-height: 125px;
+    padding: 4px 0;
+    overflow-y: scroll;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    background-color: var(--primary-background);
+}
+
+.hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.item-hours {
+    padding: 4px 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    user-select: none;
+
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.1);
+    }
+}

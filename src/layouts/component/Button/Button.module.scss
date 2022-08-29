@@ -1,0 +1,83 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: var(--font-primary);
+    padding: 4px 25px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    user-select: none;
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.more-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 700;
+    min-width: 100px;
+
+    &:hover {
+        color: var(--white-color);
+        font-weight: 700;
+    }
+    &:hover .hover-icon {
+        display: flex;
+    }
+
+    &.active {
+        position: relative;
+        color: var(--white-color);
+        background-color: hsla(0, 0%, 100%, 0.1);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background-color: var(--purple-color);
+        }
+    }
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2rem;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.children {
+    line-height: normal;
+}
+.icon-and-children {
+    display: flex;
+    align-items: center;
+}
+.live {
+    line-height: 0;
+    margin-left: 8px;
+    background-color: inherit;
+}
+.hover-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--white-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.hover-icon-play {
+    font-size: 1rem;
+    margin: auto;
+}

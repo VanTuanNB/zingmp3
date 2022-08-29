@@ -1,0 +1,112 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1080;
+}
+
+.playlist {
+    position: relative;
+    width: 330px;
+    padding: 20px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #3d3d3d;
+    z-index: 1081;
+}
+.playlist-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.playlist-input {
+    height: 40px;
+    width: 100%;
+    border-radius: 999px;
+    border: 1px solid hsla(0, 0%, 100%, 0.1);
+    background-color: hsla(0, 0%, 100%, 0.1);
+    padding: 0 15px;
+    font-size: 14px;
+    color: var(--white-color);
+}
+
+.btn-close {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3d3d3d;
+    cursor: pointer;
+}
+
+.playlist-close {
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+
+.playlist-option {
+    padding: 25px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option-title {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.option-desc {
+    font-size: 1.2rem;
+    color: hsla(0, 0%, 100%, 0.5);
+    font-weight: 400;
+}
+
+.option-toggle {
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    color: var(--white-color);
+    margin-top: 20px;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    background-color: var(--purple-color);
+    border-radius: 20px;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        font-weight: 600;
+        -webkit-filter: brightness(0.9);
+        filter: brightness(0.9);
+    }
+}
+.btn-disable {
+    width: 100%;
+    color: var(--white-color);
+    margin-top: 20px;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    background-color: var(--purple-color);
+    border-radius: 20px;
+    justify-content: center;
+    font-weight: 600;
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+        font-weight: 600;
+    }
+}
